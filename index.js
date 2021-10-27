@@ -64,6 +64,10 @@ app.get("/", (req, res) => {
     res.send("Server running");
 });
 
+app.get("/hello", (req, res) => {
+    console.log("Updated");
+});
+
 app.listen(port, () => {
     console.log("Car mechanic server is running on:", port);
 });
